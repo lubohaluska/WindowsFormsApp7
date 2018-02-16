@@ -33,6 +33,7 @@ namespace WindowsFormsApp7
             this.bSend = new System.Windows.Forms.Button();
             this.tbMessage = new System.Windows.Forms.TextBox();
             this.tbChat = new System.Windows.Forms.TextBox();
+            this.bSend2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bSend
@@ -63,11 +64,21 @@ namespace WindowsFormsApp7
             this.tbChat.Size = new System.Drawing.Size(484, 174);
             this.tbChat.TabIndex = 2;
             // 
+            // bSend2
+            // 
+            this.bSend2.Location = new System.Drawing.Point(502, 163);
+            this.bSend2.Name = "bSend2";
+            this.bSend2.Size = new System.Drawing.Size(75, 23);
+            this.bSend2.TabIndex = 3;
+            this.bSend2.Text = "Send2";
+            this.bSend2.UseVisualStyleBackColor = true;
+            // 
             // MyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 227);
+            this.Controls.Add(this.bSend2);
             this.Controls.Add(this.tbChat);
             this.Controls.Add(this.tbMessage);
             this.Controls.Add(this.bSend);
@@ -92,6 +103,7 @@ namespace WindowsFormsApp7
         private System.Windows.Forms.Button bSend;
         private System.Windows.Forms.TextBox tbMessage;
         private System.Windows.Forms.TextBox tbChat;
+        private System.Windows.Forms.Button bSend2;
     }
 }
 

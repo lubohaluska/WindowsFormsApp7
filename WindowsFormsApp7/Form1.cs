@@ -15,6 +15,24 @@ namespace WindowsFormsApp7
         public MyForm()
         {
             InitializeComponent();
+            bSend.Tag = 1;
+            bSend2.Tag = 2;
+
+
+            private void SendClicked(object sender, EventArgs e)
+            {
+
+                Button b = (Button)sender;
+
+
+                string s = b.Tag + ":" + tbMessage.Text;
+                tbChat.Text += s + Environment.NewLine;
+
+                tbMessage.Text = "";
+                 
+            }
+
+
         }
 
     }
